@@ -1,61 +1,10 @@
 "use client"
 
 import Link from "next/link"
-import ScrollingLogos from "./scrolling-logos"
 import ParticlesBackground from "./particles-background"
 
-export default function Hero() {
-  const logos = [
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 1",
-      width: 120,
-      height: 60,
-    },
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 2",
-      width: 120,
-      height: 60,
-    },
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 3",
-      width: 120,
-      height: 60,
-    },
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 4",
-      width: 120,
-      height: 60,
-    },
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 5",
-      width: 120,
-      height: 60,
-    },
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 6",
-      width: 120,
-      height: 60,
-    },
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 7",
-      width: 120,
-      height: 60,
-    },
-    {
-      src: "/placeholder.svg?height=60&width=120",
-      alt: "Company 8",
-      width: 120,
-      height: 60,
-    },
-  ]
 
+export default function Hero() {
   return (
     <section className="relative bg-gradient-to-r from-[#0a1525] to-[#4a1525] mx-auto px-4 py-20 md:py-32 text-center overflow-hidden">
       {/* Particles Background - Only for this Hero section */}
@@ -88,14 +37,6 @@ export default function Hero() {
         >
           Get a Free Consultation Now!
         </Link>
-        <div className="flex flex-row items-center justify-center mt-12 space-x-8 w-full max-w-6xl mx-auto">
-          <h2 className="text-white text-2xl font-bold tracking-wide whitespace-nowrap mr-8 mt-16 shrink-0">
-            They Trust Us
-          </h2>
-          <div className="overflow-x-auto">
-            <ScrollingLogos logos={logos} speed={30} />
-          </div>
-        </div>
       </div>
     </section>
   )

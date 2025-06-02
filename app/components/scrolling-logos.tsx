@@ -22,76 +22,69 @@ export default function ScrollingLogos({
   pauseOnHover = true,
   className = "",
 }: ScrollingLogosProps) {
-  const [loopCount, setLoopCount] = useState(3)
-  const [containerWidth, setContainerWidth] = useState(0)
-  const containerRef = useRef<HTMLDivElement>(null)
+  const [isMounted, setIsMounted] = useState(false)
 
-  // Calculate how many times to duplicate the logos to ensure smooth scrolling
   useEffect(() => {
-    if (containerRef.current) {
-      const calculateLoops = () => {
-        const containerWidth = containerRef.current?.offsetWidth || 0
-        const viewportWidth = window.innerWidth
-        // Ensure we have enough logos to fill the screen at least twice
-        const minLoops = Math.ceil((viewportWidth * 2) / containerWidth) + 1
-        setLoopCount(Math.max(minLoops, 3)) // At least 3 loops
-        setContainerWidth(containerWidth)
-      }
+    setIsMounted(true)
+  }, [])
 
-      calculateLoops()
-      window.addEventListener("resize", calculateLoops)
-      return () => window.removeEventListener("resize", calculateLoops)
-    }
-  }, [logos])
-
+  // Always show logos, don't wait for calculations
   return (
-    <div className={`w-full overflow-hidden  ${className}`}>
-      <div className="relative pt-24">
-        
-        <motion.div
-          className={`inline-flex ${pauseOnHover ? "hover:pause-animation" : ""}`}
-          animate={{
-            x: [`0%`, `-${100 / loopCount}%`],
-          }}
-          transition={{
-            duration: speed,
-            ease: "linear",
-            repeat: Number.POSITIVE_INFINITY,
-          }}
-        >
-          {/* First set of logos for measurement */}
-          <div ref={containerRef} className="flex items-center space-x-16 px-8">
-            {logos.map((logo, index) => (
-              <div key={`original-${index}`} className="flex items-center justify-center">
-                <Image
-                  src={logo.src || "/placeholder.svg"}
-                  alt={logo.alt}
-                  width={logo.width}
-                  height={logo.height}
-                  className="h-12 w-auto object-contain transition-opacity duration-300 hover:opacity-60"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Duplicated logos for infinite scrolling */}
-          {containerWidth > 0 &&
-            Array.from({ length: loopCount - 1 }).map((_, loopIndex) => (
-              <div key={`loop-${loopIndex}`} className="flex items-center space-x-16 px-8">
+    <div className={`w-full overflow-hidden ${className}`}>
+      <div className="relative py-8">
+        {isMounted ? (
+          <motion.div
+            className={`flex ${pauseOnHover ? "hover:pause-animation" : ""}`}
+            animate={{
+              x: [0, -1000],
+            }}
+            transition={{
+              duration: speed,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+          >
+            {/* Render logos multiple times for seamless loop */}
+            {Array.from({ length: 4 }).map((_, setIndex) => (
+              <div key={setIndex} className="flex items-center space-x-16 px-8 shrink-0">
                 {logos.map((logo, logoIndex) => (
-                  <div key={`${loopIndex}-${logoIndex}`} className="flex items-center justify-center">
+                  <div key={`${setIndex}-${logoIndex}`} className="flex items-center justify-center shrink-0">
                     <Image
                       src={logo.src || "/placeholder.svg"}
                       alt={logo.alt}
                       width={logo.width}
                       height={logo.height}
                       className="h-12 w-auto object-contain transition-opacity duration-300 hover:opacity-60"
+                      onError={(e) => {
+                        console.log(`Failed to load image: ${logo.src}`)
+                        e.currentTarget.src = "/placeholder.svg?height=60&width=120"
+                      }}
                     />
                   </div>
                 ))}
               </div>
             ))}
-        </motion.div>
+          </motion.div>
+        ) : (
+          // Fallback static version while mounting
+          <div className="flex items-center space-x-16 px-8">
+            {logos.map((logo, index) => (
+              <div key={index} className="flex items-center justify-center shrink-0">
+                <Image
+                  src={logo.src || "/placeholder.svg"}
+                  alt={logo.alt}
+                  width={logo.width}
+                  height={logo.height}
+                  className="h-12 w-auto object-contain"
+                  onError={(e) => {
+                    console.log(`Failed to load image: ${logo.src}`)
+                    e.currentTarget.src = "/placeholder.svg?height=60&width=120"
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

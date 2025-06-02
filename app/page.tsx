@@ -8,6 +8,7 @@ import ContactSection from "./components/ContactSection"
 import FinalMarketingSection from './components/FinalMarketingSection';
 import ClientVoicesSection from "./components/ClientVoicesSection"
 import Footer from "./components/Footer"
+import TrustedBy from "./components/TrustedBy"
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <main className="min-h-screen  ">
       <Navbar />
       <Hero />
+      <TrustedBy/>
       <DigitalMarketingSolutions/>
       <ServicesAccordion/>
       <ContactSection/>
