@@ -21,10 +21,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <div className=" mr-2">
-            <Image src="/logoo.png" alt="" width={40} height={40} className="w-10 h-10 rounded-full" />
+            <div className="mr-2">
+              <Image src="/logotr.png" alt="" width={80} height={40} className="rounded-full" />
             </div>
-            <span className="text-white text-xl font-bold tracking-wider">HELA</span>
           </Link>
         </div>
         <div className="flex items-center justify-between space-x-28">
@@ -58,15 +57,33 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex items-center space-x-4">
-        <button className="text-white cursor-pointer">
-            <Image src="/images/ar.png" alt="Arabic" width={30} height={20} className="rounded" />
-          </button>
-          <button className="text-white  cursor-pointer">
-            <Image src="/images/eng.png" alt="English" width={30} height={20} className="rounded" />
-          </button>
-          <button className="text-white  cursor-pointer">
-            <Image src="/images/fr.png" alt="French" width={30} height={20} className="rounded" />
-          </button>
+          <div className="relative group">
+            <button className="flex items-center space-x-2 bg-transparent text-white  rounded px-2 py-1 focus:outline-none focus:border-white cursor-pointer">
+              <Image 
+                src="/images/eng.png" 
+                alt="Language" 
+                width={20} 
+                height={15} 
+                className="rounded"
+              />
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="absolute right-0 mt-2 w-16 rounded-md shadow-lg bg-slate-900 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+              <div className="py-1">
+                <button className="w-full px-2 py-2 hover:bg-slate-800">
+                  <Image src="/images/ar.png" alt="Arabic" width={20} height={15} className="rounded mx-auto" />
+                </button>
+                <button className="w-full px-2 py-2 hover:bg-slate-800">
+                  <Image src="/images/eng.png" alt="English" width={20} height={15} className="rounded mx-auto" />
+                </button>
+                <button className="w-full px-2 py-2 hover:bg-slate-800">
+                  <Image src="/images/fr.png" alt="French" width={20} height={15} className="rounded mx-auto" />
+                </button>
+              </div>
+            </div>
+          </div>
           <Link
             href="/contact"
             className="bg-rose-500 hover:bg-[#0a1525] text-white px-4 py-2 rounded-md transition-colors"

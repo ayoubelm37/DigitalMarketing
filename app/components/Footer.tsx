@@ -60,14 +60,13 @@ export default function Footer() {
         {/* Logo/Brand Section */}
         <div>
           {/* Replace with your logo */}
-          <div className="flex items-center">
-          <Link href="/" className="flex items-center">
-            <div className=" mr-2">
-            <Image src="/logoo.png" alt="" width={40} height={40} className="w-10 h-10 rounded-full" />
+          <Link href="/" >
+            <div className=" mr-2 pb-6">
+            <Image src="/logotr.png" alt="" width={80} height={40} className="rounded-full" />
             </div>
-            <span className="text-white text-xl font-bold tracking-wider">HELA</span>
+           
           </Link>
-        </div>
+     
           <p className="text-gray-400 text-sm mb-4">
             Our aim is to democratise digital marketing.
           </p>
