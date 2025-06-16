@@ -59,7 +59,7 @@ export default function ServicesAccordion() {
   };
 
   return (
-    <section className="w-full max-w-6xl mx-auto my-12 px-4 bg-white">
+    <section id="services" className="w-full max-w-6xl mx-auto my-12 px-4 bg-white">
       <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a1525] mb-8 text-center">
         Our digital marketing solutions
       </h2>
