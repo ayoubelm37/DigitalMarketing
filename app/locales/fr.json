@@ -1,0 +1,212 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "requestQuote": "DEMANDER UN DEVIS"
+  },
+  "aboutPage": {
+    "paragraph1": "Fondée en 2015, YourBrand est une agence de marketing digital de premier plan dédiée à aider les entreprises à atteindre leurs objectifs en ligne. Notre équipe d'experts est spécialisée dans la création de stratégies digitales sur mesure qui génèrent des résultats.",
+    "paragraph2": "En mettant l'accent sur l'innovation et les approches basées sur les données, nous avons aidé plus de 600 entreprises à accroître leur visibilité en ligne, à générer plus de prospects et à augmenter leurs revenus grâce à des campagnes de marketing digital efficaces.",
+    "ourMission": "Notre Mission",
+    "missionParagraph": "Notre mission est de doter les entreprises des outils et des stratégies numériques dont elles ont besoin pour prospérer dans le paysage concurrentiel en ligne d'aujourd'hui. Nous croyons en la transparence, aux résultats mesurables et à l'établissement de partenariats à long terme avec nos clients."
+  },
+  "contactPage": {
+    "name": "Nom",
+    "email": "E-mail",
+    "subject": "Sujet",
+    "message": "Message",
+    "sendMessage": "Envoyer le message"
+  },
+  "hero": {
+    "tagline": "AGENCE DE MARKETING DIGITAL QUI BOOST VOS REVENUS",
+    "headline1": "Agence de Marketing Digital",
+    "headline2": "#1 pour les entreprises exigeantes",
+    "paragraph1": "Développez votre entreprise avec l'agence de marketing digital leader.",
+    "paragraph2": "Forts d'une expertise éprouvée et de résultats concrets, notre équipe de marketing digital est prête à vous aider à conquérir le monde numérique.",
+    "paragraph3": "Rejoignez notre liste de plus de 615 entreprises qui nous font confiance pour leur stratégie digitale.",
+    "button": "Obtenez une consultation gratuite maintenant !"
+  },
+  "trustedBy": {
+    "heading": "Ils nous font confiance"
+  },
+  "digitalMarketingSolutions": {
+    "heading": "Solutions de Marketing Digital: Des Résultats Concrets Garantis pour Votre Entreprise",
+    "card1": {
+      "title": "Booster l'engagement, multiplier les profits !",
+      "text1": "Nous optimisons l'engagement client sur les médias sociaux avec nos solutions de marketing digital. Le secret ? Un contenu captivant et un ciblage intelligent, éléments clés de nos solutions de marketing digital, font la différence.",
+      "text2": "Expérimentez la croissance de l'interaction avec votre audience et la visibilité de votre marque en ligne grâce à nos solutions de marketing digital spécialisées.",
+      "text3": "Chaque campagne est une opportunité de croissance et de profit, démontrant l'efficacité de nos solutions de marketing digital."
+    },
+    "card2": {
+      "title": "Optimiser vos revenus: la rentabilité, simplifiée !",
+      "text1": "Nous sommes des experts dans la création d'une présence en ligne dynamique pour nos clients, en intégrant nos solutions de marketing digital dans une stratégie holistique. Cette approche dépasse la simple visibilité en ligne ; elle cultive une réputation numérique qui résonne avec fiabilité et participation active.",
+      "text2": "Chaque campagne est une opportunité de croissance et de profit, démontrant l'efficacité de nos solutions de marketing digital."
+    },
+    "card3": {
+      "title": "Élevez votre marque, conquérez le monde numérique !",
+      "text1": "Nous sommes experts dans la création d'une présence en ligne robuste pour nos clients. Notre stratégie va au-delà de la simple visibilité ; nous bâtissons une réputation numérique qui inspire confiance et engagement.",
+      "text2": "Votre marque ne se contente pas d'exister en ligne, elle prospère."
+    },
+    "card4": {
+      "title": "Faites une impression durable, durablement !",
+      "text1": "Votre marque ne se contente pas d'exister en ligne, elle prospère. Nous maîtrisons l'art de la distinction en matière de branding, en utilisant nos solutions de marketing digital pour créer des visuels inégalés qui incarnent l'essence de votre marque. Cette approche rend votre marque indélébile sur un marché saturé.",
+      "text2": "Nous donnons vie à votre vision, en veillant à ce que votre image ait un impact et perdure."
+    },
+    "button": "Contactez-nous"
+  },
+  "servicesAccordion": {
+    "heading": "Nos solutions de marketing digital",
+    "service1": {
+      "title": "Conception Graphique",
+      "details": "Nous créons des designs visuellement époustouflants qui capturent l'essence de votre marque et engagent votre audience."
+    },
+    "service2": {
+      "title": "Création de Sites Web",
+      "details": "Des sites web personnalisés conçus pour la performance, l'esthétique et la conversion, adaptés à vos besoins commerciaux."
+    },
+    "service3": {
+      "title": "Optimisation SEO",
+      "details": "Boostez votre visibilité en ligne et attirez plus de trafic organique avec nos stratégies SEO expertes."
+    },
+    "service4": {
+      "title": "Publicités Facebook et Google Ads:",
+      "details": "Maximisez votre ROI avec des campagnes publicitaires ciblées sur Facebook et Google, atteignant vos clients idéaux."
+    },
+    "service5": {
+      "title": "Gestion des Médias Sociaux:",
+      "details": "Engagez et développez votre audience avec une gestion des médias sociaux cohérente, créative et stratégique."
+    },
+    "service6": {
+      "title": "Rédaction Captivante",
+      "details": "Un contenu percutant qui raconte votre histoire, incite à l'action et construit la voix de votre marque."
+    },
+    "service7": {
+      "title": "Marketing par E-mail Puissant",
+      "details": "Nourrissez les prospects et augmentez les conversions avec des campagnes par e-mail personnalisées et à fort impact."
+    },
+    "service8": {
+      "title": "Génération de Leads Exceptionnelle",
+      "details": "Attirez et convertissez des leads de haute qualité pour développer votre entreprise et augmenter vos ventes."
+    },
+    "service9": {
+      "title": "Photographie et Vidéographie:",
+      "details": "Des photos et vidéos professionnelles qui mettent en valeur votre marque et captivent votre audience."
+    },
+    "stats": {
+      "traffic": "TRAFIC ORGANIQUE",
+      "roi": "RÉVOLUTION ROI",
+      "impressions": "IMPRESSIONS",
+      "engagement": "ENGAGEMENT"
+    },
+    "button": "Demandez votre devis gratuit maintenant"
+  },
+  "clientVoices": {
+    "heading": "Voix de nos clients",
+    "subheading": "Des histoires de réussite inspirantes à découvrir.",
+    "testimonials": [
+      {
+        "name": "Safa Nassir",
+        "title": "Directrice Commerciale",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "Pendant cette collaboration avec Rhillane, l'équipe était si encourageante, énergique et engageante. Je me suis rendu compte que l'Agence RHILLANE est axée sur la prestation d'un excellent service à ses clients."
+      },
+      {
+        "name": "Afeline Bexon",
+        "title": "CEO",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "Une grande compréhension de nos besoins et des propositions créatives qui dépassent nos attentes. Une équipe efficace tant sur le plan du design que technique."
+      },
+      {
+        "name": "Albert Durant",
+        "title": "Directeur Marketing",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "L'équipe de Rhillane Digital se distingue non seulement par son expertise technique approfondie mais également par une créativité sans bornes qui insuffle à chaque projet des stratégies innovantes."
+      },
+      {
+        "name": "Sarah Martin",
+        "title": "PDG, TechStart",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "Les résultats que nous avons obtenus avec les stratégies de marketing numérique de Rhillane ont dépassé nos attentes. Leur approche axée sur les données et leurs solutions créatives ont considérablement renforcé notre présence en ligne."
+      },
+      {
+        "name": "Marc Dubois",
+        "title": "Directeur Marketing, InnovateCo",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "L'équipe de Rhillane a transformé notre stratégie de marketing numérique. Leur expertise en SEO et en gestion des médias sociaux nous a aidés à atteindre de nouveaux publics et à développer considérablement notre entreprise."
+      }
+    ],
+    "button": "Demandez votre devis gratuit maintenant"
+  },
+  "aboutCEO": {
+    "heading": "Avec notre expertise : transformez votre vision en réalité tangible !",
+    "name": "Houssam",
+    "title": "PDG & Fondateur",
+    "description": "Avec plus d'une décennie d'expérience en marketing digital, Houssam a aidé des centaines d'entreprises à atteindre leurs objectifs. Sa vision et son leadership sont le moteur du succès de notre agence.",
+    "contactUs": "Contactez-nous"
+  },
+  "finalMarketingSection": {
+    "heading": "Enfin, une agence de marketing digital qui tient ses promesses et va au-delà !",
+    "paragraph": "En seulement trois mois et pour des dizaines de clients, les solutions innovantes de notre agence de marketing digital ont entraîné une augmentation moyenne impressionnante de 40% du chiffre d'affaires, stimulant significativement le trafic du site web, le nombre d'abonnés sur les réseaux sociaux et améliorant la valeur moyenne des commandes grâce à nos solutions stratégiques de marketing digital.",
+    "button": "Parlez à nos experts"
+  },
+  "footer": {
+    "contactSection": {
+      "heading1": "Prêt à parler avec un expert en marketing ?",
+      "heading2": "Contactez-nous.",
+      "phoneNumber": "+212 635-589948"
+    },
+    "stats": {
+      "projects": "PROJETS DIGITAUX",
+      "companies": "ENTREPRISES",
+      "countries": "PAYS"
+    },
+    "appointmentSection": {
+      "heading": "Demandez votre rendez-vous",
+      "paragraph": "Ville différente? Pays différent? Continent différent? Nous restons toujours proches de vous.",
+      "button": "Prendre rendez-vous",
+      "revenueLabel": "REVENUS GÉNÉRÉS POUR NOS CLIENTS",
+      "revenueValue": "$50,231,398,548"
+    },
+    "brandSection": {
+      "paragraph1": "Notre objectif est de démocratiser le marketing digital.",
+      "paragraph2": "Nous nous engageons à dépasser vos attentes. Nous offrons des services à très haute valeur ajoutée tout en garantissant une excellente rentabilité."
+    },
+    "servicesSection": {
+      "heading": "SERVICES",
+      "webDesign": "Conception Web",
+      "seoMorocco": "Expert SEO Maroc",
+      "graphicDesign": "Conception Graphique",
+      "socialMediaManagement": "Gestion des Médias Sociaux",
+      "advertising": "Publicité",
+      "seoCopywriting": "Rédaction SEO fr",
+      "photography": "Photographie",
+      "b2bSeo": "Services SEO B2B",
+      "seoAgency": "Agence SEO"
+    },
+    "linksSection": {
+      "heading": "LIENS",
+      "home": "Accueil",
+      "about": "À propos",
+      "contact": "Contact",
+      "terms": "Conditions Générales d'Utilisation",
+      "privacy": "Politique de Confidentialité"
+    },
+    "contactInfoSection": {
+      "heading": "CONTACT",
+      "email": "akratihoussam@gmail.com",
+      "officeHeading": "NOTRE BUREAU AU MAROC",
+      "address": "5ème étage, N°27, Akram Offices, Av. Arabie Saoudite, Tanger 90000",
+      "phone": "+212 635-589948",
+      "viewMap": "Voir la carte →",
+      "languagesHeading": "NOUS PARLONS"
+    },
+    "copyright": "Tous droits réservés."
+  }
+}

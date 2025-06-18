@@ -1,27 +1,20 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Hela | Digital Marketing Agency",
-  description: "Leading digital marketing agency helping businesses grow online",
+  title: 'Hela | Digital Marketing Agency',
+  description: 'Your partner for digital marketing success.',
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head >
-         <link rel="icon" href="/logoo.png" />
-       
+      <head>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
-}
+} 

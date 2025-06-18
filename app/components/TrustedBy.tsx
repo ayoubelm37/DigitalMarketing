@@ -1,6 +1,14 @@
+'use client'
+
 import ScrollingLogos from "./scrolling-logos"
+import { getTranslations, type Locale } from '../lib/i18n'
+import { usePathname } from 'next/navigation'
 
 export default function TrustedBy() {
+  const pathname = usePathname()
+  const currentLocale = (pathname.split('/')[1] || 'en') as Locale
+  const t = getTranslations(currentLocale)
+
   const logos = [
     {
       src: "/1.jpg",
@@ -55,7 +63,7 @@ export default function TrustedBy() {
   return (
     <div className="flex flex-row items-center justify-center mt-12 space-x-8 w-full max-w-6xl mx-auto">
       <h2 className="text-black text-2xl font-bold tracking-wide whitespace-nowrap mr-8  shrink-0">
-        They Trust Us
+        {t.trustedBy.heading}
       </h2>
       <div className="overflow-x-auto">
         <ScrollingLogos logos={logos} speed={30} />

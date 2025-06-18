@@ -1,0 +1,212 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "requestQuote": "REQUEST YOUR QUOTE"
+  },
+  "aboutPage": {
+    "paragraph1": "Founded in 2015, YourBrand is a leading digital marketing agency dedicated to helping businesses achieve their online goals. Our team of experts specializes in creating tailored digital strategies that drive results.",
+    "paragraph2": "With a focus on innovation and data-driven approaches, we've helped over 600 businesses increase their online visibility, generate more leads, and boost their revenue through effective digital marketing campaigns.",
+    "ourMission": "Our Mission",
+    "missionParagraph": "Our mission is to empower businesses with the digital tools and strategies they need to thrive in today's competitive online landscape. We believe in transparency, measurable results, and building long-term partnerships with our clients."
+  },
+  "contactPage": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send Message"
+  },
+  "hero": {
+    "tagline": "DIGITAL MARKETING AGENCY THAT BOOSTS YOUR REVENUE",
+    "headline1": "Digital Marketing Agency",
+    "headline2": "#1 for demanding businesses",
+    "paragraph1": "Grow your business with the leading digital marketing agency.",
+    "paragraph2": "With proven expertise and concrete results, our digital marketing team is ready to help you conquer the digital world.",
+    "paragraph3": "Join our list of over 615 businesses who trust us with their digital strategy.",
+    "button": "Get a Free Consultation Now!"
+  },
+  "trustedBy": {
+    "heading": "They Trust Us"
+  },
+  "digitalMarketingSolutions": {
+    "heading": "Digital Marketing Solutions: Guaranteeing Tangible Results for Your Business",
+    "card1": {
+      "title": "Boost Engagement, Multiply Profits!",
+      "text1": "We enhance client engagement on social media with our digital marketing solutions. The secret? Engaging content and intelligent targeting, key elements of our digital marketing solutions, make the difference.",
+      "text2": "Experience growth in audience interaction and brand visibility online with our specialized digital marketing solutions.",
+      "text3": "Each campaign is an opportunity for growth and profit, showcasing our digital marketing solutions."
+    },
+    "card2": {
+      "title": "Optimize Your Revenue: Profitability, Simplified!",
+      "text1": "We are connoisseurs in forging a dynamic online presence for our clients, integrating our digital marketing solutions into a holistic strategy. This approach surpasses mere online visibility; it cultivates a digital reputation that resonates with reliability and active participation.",
+      "text2": "Each campaign is an opportunity for growth and profit, showcasing our digital marketing solutions."
+    },
+    "card3": {
+      "title": "Elevate Your Brand, Conquer the Digital Realm!",
+      "text1": "We are experts in creating a robust online presence for our clients. Our strategy goes beyond mere visibility; we build a digital reputation that inspires trust and engagement.",
+      "text2": "Your brand doesn't just exist online, it thrives."
+    },
+    "card4": {
+      "title": "Make a Lasting Impression, Enduringly!",
+      "text1": "Your brand doesn't just exist online, it thrives. We are adept at the art of distinction in branding, using our digital marketing solutions to craft unparalleled visuals that embody the core of your brand. This approach renders your brand indelible in a crowded marketplace.",
+      "text2": "We bring your vision to life, ensuring that your image makes an impact and endures."
+    },
+    "button": "Contact Us"
+  },
+  "servicesAccordion": {
+    "heading": "Our digital marketing solutions",
+    "service1": {
+      "title": "Graphic Design",
+      "details": "We create visually stunning designs that capture your brand's essence and engage your audience."
+    },
+    "service2": {
+      "title": "Website Creation",
+      "details": "Custom websites built for performance, aesthetics, and conversion, tailored to your business needs."
+    },
+    "service3": {
+      "title": "SEO Optimization",
+      "details": "Boost your online visibility and attract more organic traffic with our expert SEO strategies."
+    },
+    "service4": {
+      "title": "Facebook Ads and Google Ads:",
+      "details": "Maximize your ROI with targeted ad campaigns on Facebook and Google, reaching your ideal customers."
+    },
+    "service5": {
+      "title": "Social Media Management:",
+      "details": "Engage and grow your audience with consistent, creative, and strategic social media management."
+    },
+    "service6": {
+      "title": "Copywriting captivant",
+      "details": "Compelling copy that tells your story, drives action, and builds your brand voice."
+    },
+    "service7": {
+      "title": "Powerful Email Marketing",
+      "details": "Nurture leads and boost conversions with personalized, high-impact email campaigns."
+    },
+    "service8": {
+      "title": "Exceptional Lead Generation",
+      "details": "Attract and convert high-quality leads to grow your business and increase sales."
+    },
+    "service9": {
+      "title": "Photography and Videography:",
+      "details": "Professional photos and videos that showcase your brand and captivate your audience."
+    },
+    "stats": {
+      "traffic": "ORGANIC TRAFFIC",
+      "roi": "ROI REVOLUTION",
+      "impressions": "IMPRESSIONS",
+      "engagement": "ENGAGEMENT"
+    },
+    "button": "Request your Free quote now"
+  },
+  "clientVoices": {
+    "heading": "Voices of Our Clients",
+    "subheading": "Inspiring Success Stories to Discover.",
+    "testimonials": [
+      {
+        "name": "Safa Nassir",
+        "title": "Commercial Director",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "During this collaboration with Rhillane, the team was so encouraging, energetic, and engaging. I realized that RHILLANE Agency is focused on delivering excellent service to its clients."
+      },
+      {
+        "name": "Afeline Bexon",
+        "title": "CEO",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "A great understanding of our needs and creative proposals that exceed our expectations. An efficient team both from a design and technical standpoint."
+      },
+      {
+        "name": "Albert Durant",
+        "title": "Marketing Director",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "The Rhillane Digital team stands out not only for its deep technical expertise but also for boundless creativity that infuses innovative strategies into every project."
+      },
+      {
+        "name": "Sarah Martin",
+        "title": "CEO, TechStart",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "The results we've achieved with Rhillane's digital marketing strategies have exceeded our expectations. Their data-driven approach and creative solutions have significantly boosted our online presence."
+      },
+      {
+        "name": "Marc Dubois",
+        "title": "Marketing Director, InnovateCo",
+        "image": "/placeholder.svg?height=80&width=80",
+        "rating": 5,
+        "text": "Rhillane's team has transformed our digital marketing strategy. Their expertise in SEO and social media management has helped us reach new audiences and grow our business significantly."
+      }
+    ],
+    "button": "Request your Free quote now"
+  },
+  "aboutCEO": {
+    "heading": "With our expertise: turn your vision into tangible reality !",
+    "name": "Houssam",
+    "title": "CEO & Founder",
+    "description": "With over a decade of experience in digital marketing, Houssam has helped hundreds of businesses achieve their goals. His vision and leadership drive our agency's success.",
+    "contactUs": "Contact Us"
+  },
+  "finalMarketingSection": {
+    "heading": "Finally, a Digital Marketing Agency That Keeps Its Promises and Goes Beyond !",
+    "paragraph": "In just three months and for dozens of clients, our digital marketing agency's innovative digital marketing solutions have led to an impressive 40% average increase in turnover, significantly boosting website traffic, social media followers and enhancing average order value through our strategic digital marketing solutions.",
+    "button": "Talk to our Experts"
+  },
+  "footer": {
+    "contactSection": {
+      "heading1": "Ready to speak with a marketing expert?",
+      "heading2": "Contact us.",
+      "phoneNumber": "+212 635-589948"
+    },
+    "stats": {
+      "projects": "DIGITAL PROJECTS",
+      "companies": "COMPANIES",
+      "countries": "COUNTRIES"
+    },
+    "appointmentSection": {
+      "heading": "Request your appointment",
+      "paragraph": "Different city? Different country? Different continent? We always stay close to you.",
+      "button": "Make an appointment",
+      "revenueLabel": "REVENUE GENERATED FOR OUR CLIENTS",
+      "revenueValue": "$50,231,398,548"
+    },
+    "brandSection": {
+      "paragraph1": "Our aim is to democratise digital marketing.",
+      "paragraph2": "We are committed to exceeding your expectations. We provide services with very high added value while guaranteeing excellent profitability."
+    },
+    "servicesSection": {
+      "heading": "SERVICES",
+      "webDesign": "Web Design",
+      "seoMorocco": "Morocco SEO expert",
+      "graphicDesign": "Graphic Design",
+      "socialMediaManagement": "Social Media Management",
+      "advertising": "Advertising",
+      "seoCopywriting": "SEO copywriting en",
+      "photography": "Photography",
+      "b2bSeo": "B2b SEO services",
+      "seoAgency": "Seo Agency"
+    },
+    "linksSection": {
+      "heading": "LINKS",
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "terms": "Terms and Conditions of Use",
+      "privacy": "Privacy Policy"
+    },
+    "contactInfoSection": {
+      "heading": "CONTACT",
+      "email": "akratihoussam@gmail.com",
+      "officeHeading": "OUR OFFICE IN MOROCCO",
+      "address": "5ème étage, N°27, Akram Offices, Av. Arabie Saoudite, Tangier 90000",
+      "phone": "+212 635-589948",
+      "viewMap": "View map →",
+      "languagesHeading": "WE SPEAK"
+    },
+    "copyright": "All rights reserved."
+  }
+}
