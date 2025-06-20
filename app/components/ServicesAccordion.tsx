@@ -2,56 +2,62 @@
 import { useState } from "react";
 import { FaPaintBrush, FaCode, FaSearch, FaFacebook, FaHeart, FaPenNib, FaEnvelope, FaUserFriends, FaCamera } from "react-icons/fa";
 import Image from 'next/image';
-
-const services = [
-  {
-    icon: <FaPaintBrush className="text-2xl text-rose-500" />,
-    title: "Graphic Design",
-    details: "We create visually stunning designs that capture your brand's essence and engage your audience.",
-  },
-  {
-    icon: <FaCode className="text-2xl text-rose-500" />,
-    title: "Website Creation",
-    details: "Custom websites built for performance, aesthetics, and conversion, tailored to your business needs.",
-  },
-  {
-    icon: <FaSearch className="text-2xl text-rose-500" />,
-    title: "SEO Optimization",
-    details: "Boost your online visibility and attract more organic traffic with our expert SEO strategies.",
-  },
-  {
-    icon: <FaFacebook className="text-2xl text-rose-500" />,
-    title: "Facebook Ads and Google Ads:",
-    details: "Maximize your ROI with targeted ad campaigns on Facebook and Google, reaching your ideal customers.",
-  },
-  {
-    icon: <FaHeart className="text-2xl text-rose-500" />,
-    title: "Social Media Management:",
-    details: "Engage and grow your audience with consistent, creative, and strategic social media management.",
-  },
-  {
-    icon: <FaPenNib className="text-2xl text-rose-500" />,
-    title: "Copywriting captivant",
-    details: "Compelling copy that tells your story, drives action, and builds your brand voice.",
-  },
-  {
-    icon: <FaEnvelope className="text-2xl text-rose-500" />,
-    title: "Powerful Email Marketing",
-    details: "Nurture leads and boost conversions with personalized, high-impact email campaigns.",
-  },
-  {
-    icon: <FaUserFriends className="text-2xl text-rose-500" />,
-    title: "Exceptional Lead Generation",
-    details: "Attract and convert high-quality leads to grow your business and increase sales.",
-  },
-  {
-    icon: <FaCamera className="text-2xl text-rose-500" />,
-    title: "Photography and Videography:",
-    details: "Professional photos and videos that showcase your brand and captivate your audience.",
-  },
-];
+import { getTranslations, type Locale } from '../lib/i18n'
+import { usePathname } from 'next/navigation'
 
 export default function ServicesAccordion() {
+  const pathname = usePathname()
+  const currentLocale = (pathname.split('/')[1] || 'en') as Locale
+  const t = getTranslations(currentLocale)
+
+  const services = [
+    {
+      icon: <FaPaintBrush className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service1.title,
+      details: t.servicesAccordion.service1.details,
+    },
+    {
+      icon: <FaCode className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service2.title,
+      details: t.servicesAccordion.service2.details,
+    },
+    {
+      icon: <FaSearch className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service3.title,
+      details: t.servicesAccordion.service3.details,
+    },
+    {
+      icon: <FaFacebook className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service4.title,
+      details: t.servicesAccordion.service4.details,
+    },
+    {
+      icon: <FaHeart className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service5.title,
+      details: t.servicesAccordion.service5.details,
+    },
+    {
+      icon: <FaPenNib className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service6.title,
+      details: t.servicesAccordion.service6.details,
+    },
+    {
+      icon: <FaEnvelope className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service7.title,
+      details: t.servicesAccordion.service7.details,
+    },
+    {
+      icon: <FaUserFriends className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service8.title,
+      details: t.servicesAccordion.service8.details,
+    },
+    {
+      icon: <FaCamera className="text-2xl text-rose-500" />,
+      title: t.servicesAccordion.service9.title,
+      details: t.servicesAccordion.service9.details,
+    },
+  ];
+
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleAccordion = (idx: number) => {
@@ -59,9 +65,9 @@ export default function ServicesAccordion() {
   };
 
   return (
-    <section className="w-full max-w-6xl mx-auto my-12 px-4 bg-white">
+    <section id="services" className="w-full max-w-6xl mx-auto my-12 px-4 bg-white">
       <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a1525] mb-8 text-center">
-        Our digital marketing solutions
+        {t.servicesAccordion.heading}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div>
@@ -99,28 +105,28 @@ export default function ServicesAccordion() {
 
           <div className="grid grid-cols-2 gap-8 text-center mb-8">
             <div>
-              <p className="text-rose-500 text-sm font-bold">ORGANIC TRAFFIC</p>
+              <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.traffic}</p>
               <p className="text-[#0a1525] text-4xl font-extrabold">+77%</p>
             </div>
             <div>
-              <p className="text-rose-500 text-sm font-bold">ROI REVOLUTION</p>
+              <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.roi}</p>
               <p className="text-[#0a1525] text-4xl font-extrabold">+241%</p>
             </div>
             <div>
-              <p className="text-rose-500 text-sm font-bold">IMPRESSIONS</p>
+              <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.impressions}</p>
               <p className="text-[#0a1525] text-4xl font-extrabold">+81%</p>
             </div>
             <div>
-              <p className="text-rose-500 text-sm font-bold">ENGAGEMENT</p>
+              <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.engagement}</p>
               <p className="text-[#0a1525] text-4xl font-extrabold">+73%</p>
             </div>
           </div>
 
           <a
-            href="/contact"
+            href={`/${currentLocale}/contact`}
             className="bg-[#ed1c24] hover:bg-[#c81018] text-white font-bold text-lg px-12 py-4 rounded-lg shadow transition-colors duration-300"
           >
-            Request your Free quote now
+            {t.servicesAccordion.button}
           </a>
         </div>
       </div>

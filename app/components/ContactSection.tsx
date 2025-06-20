@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function ContactSection() {
@@ -95,12 +96,12 @@ export default function ContactSection() {
                 At Rhillane, we take pride in collaborating with a diverse range of partners in the digital world,
                 creating a dynamic and innovative network.
               </p>
-              <a
+              <Link
                 href="/contact" // Assuming a contact page for consultation
                 className="bg-[#ed1c24] hover:bg-[#c81018] text-white font-bold text-lg px-12 py-4 rounded-lg shadow transition-colors duration-300 self-start"
               >
                 Free consultation
-              </a>
+              </Link>
             </div>
 
             {/* Right Column: Partner Logos */}

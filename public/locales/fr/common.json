@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "requestQuote": "DEMANDER UN DEVIS"
+  },
+  "hero": {
+    "title": "Agence de Marketing Digital",
+    "subtitle": "#1 pour les entreprises exigeantes",
+    "description": "Développez votre entreprise avec l'agence de marketing digital leader",
+    "cta": "Obtenez une consultation gratuite maintenant!"
+  },
+  "services": {
+    "title": "Nos solutions de marketing digital",
+    "graphicDesign": "Design Graphique",
+    "webCreation": "Création de Site Web",
+    "seo": "Optimisation SEO",
+    "socialMedia": "Gestion des Réseaux Sociaux",
+    "copywriting": "Rédaction",
+    "emailMarketing": "Email Marketing",
+    "leadGeneration": "Génération de Leads",
+    "photography": "Photographie et Vidéographie"
+  }
+}

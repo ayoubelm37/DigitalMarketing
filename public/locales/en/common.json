@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Digital Marketing Agency",
+    "subtitle": "#1 for demanding businesses",
+    "description": "Grow your business with the leading digital marketing agency.",
+    "cta": "Get a Free Consultation Now!"
+  },
+  "services": {
+    "title": "Our digital marketing solutions",
+    "graphicDesign": "Graphic Design",
+    "webCreation": "Website Creation",
+    "seo": "SEO Optimization",
+    "socialMedia": "Social Media Management",
+    "copywriting": "Copywriting",
+    "emailMarketing": "Email Marketing",
+    "leadGeneration": "Lead Generation",
+    "photography": "Photography and Videography"
+  }
+}
