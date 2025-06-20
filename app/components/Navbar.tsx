@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <div className="mr-2">
-              <Image src="/logotr.png" alt="" width={80} height={40} className="rounded-full" objectFit="contain" />
+              <Image src="/logotr.png" alt="" width={80} height={40} className="rounded-full" style={{ objectFit: "contain" }} />
             </div>
           </Link>
         </div>

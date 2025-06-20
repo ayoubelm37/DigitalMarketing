@@ -68,7 +68,7 @@ export default function Footer() {
           {/* Replace with your logo */}
           <Link href={`/${currentLocale}/`} >
             <div className=" mr-2 pb-6">
-            <Image src="/logotr.png" alt="" width={80} height={40} className="rounded-full" objectFit="contain" />
+            <Image src="/logotr.png" alt="" width={80} height={40} className="rounded-full" style={{ objectFit: "contain" }} />
             </div>
            
           </Link>

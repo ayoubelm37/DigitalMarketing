@@ -16,8 +16,13 @@ export async function generateStaticParams() {
   return ['en', 'ar', 'fr'].map((locale) => ({ locale }))
 }
 
-export default function Home({ params: { locale } }: { params: { locale: string } }) {
-  const direction = getDirection(locale as 'en' | 'ar' | 'fr')
+export interface PageProps {
+  params: { locale: string }
+  searchParams?: Record<string, string | string[]>
+}
+
+export default function Home({ params }: { params: { locale: string } }) {
+  const direction = getDirection(params.locale as 'en' | 'ar' | 'fr')
   return (
     <main className="min-h-screen  " dir={direction}>
       <Navbar />
