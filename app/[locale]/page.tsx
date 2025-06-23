@@ -5,8 +5,6 @@ import ServicesAccordion from "../components/ServicesAccordion"
 import AboutCEO from "../components/AboutCEO"
 import ContactSection from "../components/ContactSection"
 
-import FinalMarketingSection from '../components/FinalMarketingSection';
-import ClientVoicesSection from "../components/ClientVoicesSection"
 import Footer from "../components/Footer"
 import TrustedBy from "../components/TrustedBy"
 
@@ -32,8 +30,6 @@ export default function Home({ params }: { params: { locale: string } }) {
       <ServicesAccordion/>
       <ContactSection/>
       <AboutCEO/>
-        <FinalMarketingSection />
-        <ClientVoicesSection/>
         <Footer/>
     </main>
   )
