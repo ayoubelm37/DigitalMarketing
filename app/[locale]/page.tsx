@@ -19,8 +19,9 @@ export interface PageProps {
   searchParams?: Record<string, string | string[]>
 }
 
-export default function Home({ params }: { params: { locale: string } }) {
-  const direction = getDirection(params.locale as 'en' | 'ar' | 'fr')
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const direction = getDirection(locale as 'en' | 'ar' | 'fr')
   return (
     <main className="min-h-screen  " dir={direction}>
       <Navbar />

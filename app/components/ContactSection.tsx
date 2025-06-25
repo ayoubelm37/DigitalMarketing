@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 export default function ContactSection() {
   return (
@@ -44,7 +45,16 @@ export default function ContactSection() {
                 </div>
                  <div className="flex flex-col items-center">
                     {/* Provenexpert Logo */}
-                    <img loading="lazy" decoding="async" width="10" height="10" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJsYXllciIgdmlld0JveD0iMCAwIDYzOSA2MzkuNzgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZDljNTk0O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+cHJvdmVuZXhwZXJ0LWljb248L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTY0NS41LDMyNS42MWMwLDE3Ni44OS0xNDMuMzksMzIwLjI4LTMxOS41LDMyMC4yOFM2LjUsNTAyLjUsNi41LDMyNS42MSwxNDkuODksNi4xMSwzMjYsNi4xMSw2NDUuNSwxNDkuNSw2NDUuNSwzMjUuNjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNi41IC02LjExKSI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ1My44LDE2MS4xOCwyNzEuNDUsMzQzLjUzLDE5OC4yLDI3MC4yOCwxMjUsMzQzLjUzbDE0Ni41LDE0Ny4yOSwyNTUuNi0yNTUuNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02LjUgLTYuMTEpIj48L3BhdGg+PC9zdmc+" className="attachment-full size-full wp-image-3487" alt="Provenexpert" title="Home 7"></img>
+                    <Image
+                      loading="lazy"
+                      decoding="async"
+                      width={10}
+                      height={10}
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJsYXllciIgdmlld0JveD0iMCAwIDYzOSA2MzkuNzgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZDljNTk0O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+cHJvdmVuZXhwZXJ0LWljb248L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTY0NS41LDMyNS42MWMwLDE3Ni44OS0xNDMuMzksMzIwLjI4LTMxOS41LDMyMC4yOFM2LjUsNTAyLjUsNi41LDMyNS42MSwxNDkuODksNi4xMSwzMjYsNi4xMSw2NDUuNSwxNDkuNSw2NDUuNSwzMjUuNjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNi41IC02LjExKSI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ1My44LDE2MS4xOCwyNzEuNDUsMzQzLjUzLDE5OC4yLDI3MC4yOCwxMjUsMzQzLjUzbDE0Ni41LDE0Ny4yOSwyNTUuNi0yNTUuNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02LjUgLTYuMTEpIj48L3BhdGg+PC9zdmc+"
+                      className="attachment-full size-full wp-image-3487"
+                      alt="Provenexpert"
+                      title="Home 7"
+                    />
                     <span className="font-bold text-lg">Provenexpert</span>
                     <span className="text-sm text-gray-400">4.5 ★★★★★</span>
                 </div>
