@@ -5,8 +5,6 @@ import ServicesAccordion from "../components/ServicesAccordion"
 import AboutCEO from "../components/AboutCEO"
 import ContactSection from "../components/ContactSection"
 
-import FinalMarketingSection from '../components/FinalMarketingSection';
-import ClientVoicesSection from "../components/ClientVoicesSection"
 import Footer from "../components/Footer"
 import TrustedBy from "../components/TrustedBy"
 
@@ -21,8 +19,9 @@ export interface PageProps {
   searchParams?: Record<string, string | string[]>
 }
 
-export default function Home({ params }: { params: { locale: string } }) {
-  const direction = getDirection(params.locale as 'en' | 'ar' | 'fr')
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const direction = getDirection(locale as 'en' | 'ar' | 'fr')
   return (
     <main className="min-h-screen  " dir={direction}>
       <Navbar />
@@ -32,8 +31,6 @@ export default function Home({ params }: { params: { locale: string } }) {
       <ServicesAccordion/>
       <ContactSection/>
       <AboutCEO/>
-        <FinalMarketingSection />
-        <ClientVoicesSection/>
         <Footer/>
     </main>
   )

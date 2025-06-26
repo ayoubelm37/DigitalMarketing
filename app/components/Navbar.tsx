@@ -82,7 +82,7 @@ export default function Navbar() {
                   onClick={() => handleLanguageChange('en')}
                   className="w-full px-2 py-2 hover:bg-slate-800"
                 >
-                  <Image src="/images/eng.png" alt="English" width={20} height={15} className="rounded mx-auto" />
+                  <Image src="/images/en.png" alt="English" width={20} height={15} className="rounded mx-auto" />
                 </button>
                 <button 
                   onClick={() => handleLanguageChange('fr')}
