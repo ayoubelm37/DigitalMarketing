@@ -2,6 +2,8 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { getTranslations, getDirection } from './lib/i18n'
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -15,11 +17,16 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children, params }: { children: React.ReactNode, params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const direction = getDirection(locale as 'en' | 'ar' | 'fr')
+  const t = getTranslations(locale as 'en' | 'ar' | 'fr')
   return (
     <html lang="en">
       <head></head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   )
 }

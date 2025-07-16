@@ -8,7 +8,8 @@ import ContactSection from "../components/ContactSection"
 import Footer from "../components/Footer"
 import TrustedBy from "../components/TrustedBy"
 
-import { getDirection } from '../lib/i18n'
+import { getDirection, Locale } from '../lib/i18n'
+import { getTranslations } from "../lib/i18n";
 
 export async function generateStaticParams() {
   return ['en', 'ar', 'fr'].map((locale) => ({ locale }))
@@ -20,18 +21,20 @@ export interface PageProps {
 }
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params
-  const direction = getDirection(locale as 'en' | 'ar' | 'fr')
+  const { locale } = await params;
+  const direction = getDirection(locale as 'en' | 'ar' | 'fr');
+  const t = await getTranslations(locale as Locale); // <-- Load translations
+
   return (
-    <main className="min-h-screen  " dir={direction}>
+    <main className="min-h-screen" dir={direction}>
       <Navbar />
       <Hero />
-      <TrustedBy/>
-      <DigitalMarketingSolutions/>
-      <ServicesAccordion/>
-      <ContactSection/>
-      <AboutCEO/>
-        <Footer/>
+      <TrustedBy />
+      <DigitalMarketingSolutions />
+      <ServicesAccordion />
+      <ContactSection />
+      <AboutCEO />
+      <Footer t={t} /> {/* <-- Pass t here */}
     </main>
-  )
+  );
 } 

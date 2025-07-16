@@ -11,8 +11,6 @@ function getLocale(request: NextRequest): string {
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
 
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages()
-  const locales = ['en', 'ar', 'fr']
-
   try {
     return matchLocale(languages, locales, defaultLocale)
   } catch (error) {
@@ -22,6 +20,17 @@ function getLocale(request: NextRequest): string {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
+
+  // --- FIX: Do NOT redirect static assets! ---
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.startsWith('/favicon.ico') ||
+    pathname.match(/\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|woff|woff2|ttf|eot)$/)
+  ) {
+    return; // Let Next.js handle these
+  }
+
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
@@ -36,6 +45,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|images).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
   ],
 } 

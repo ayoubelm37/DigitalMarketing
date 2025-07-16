@@ -30,22 +30,22 @@ export default function StatsSection() {
 
   const stats = [
     {
-      logo: "/marketing-logos/organic-visits.png",
+      logo: "/img1.webp",
       title: "الزيارات العضوية",
       value: 77
     },
     {
-      logo: "/marketing-logos/roi.png",
+      logo: "/img2.webp",
       title: "ثورة العائد على الاستثمار",
       value: 241
     },
     {
-      logo: "/marketing-logos/engagement.png",
+      logo: "/img3.webp",
       title: "التفاعل",
       value: 73
     },
     {
-      logo: "/marketing-logos/visibility.png",
+      logo: "/img4.webp",
       title: "الظهور",
       value: 81
     }

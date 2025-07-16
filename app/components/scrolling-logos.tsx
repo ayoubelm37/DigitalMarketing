@@ -50,14 +50,14 @@ export default function ScrollingLogos({
                 {logos.map((logo, logoIndex) => (
                   <div key={`${setIndex}-${logoIndex}`} className="flex items-center justify-center shrink-0">
                     <Image
-                      src={logo.src || "/placeholder.svg"}
+                      src={logo.src || "/img1.webp"}
                       alt={logo.alt}
                       width={logo.width}
                       height={logo.height}
                       className="h-12 w-auto object-contain transition-opacity duration-300 hover:opacity-60"
                       onError={(e) => {
-                        console.log(`Failed to load image: ${logo.src}`)
-                        e.currentTarget.src = "/placeholder.svg?height=60&width=120"
+                        // Use an existing image as fallback instead of logging
+                        e.currentTarget.src = "/img1.webp"
                       }}
                     />
                   </div>
@@ -71,14 +71,14 @@ export default function ScrollingLogos({
             {logos.map((logo, index) => (
               <div key={index} className="flex items-center justify-center shrink-0">
                 <Image
-                  src={logo.src || "/placeholder.svg"}
+                  src={logo.src || "/img1.webp"}
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
                   className="h-12 w-auto object-contain"
                   onError={(e) => {
-                    console.log(`Failed to load image: ${logo.src}`)
-                    e.currentTarget.src = "/placeholder.svg?height=60&width=120"
+                    // Use an existing image as fallback instead of logging
+                    e.currentTarget.src = "/img1.webp"
                   }}
                 />
               </div>

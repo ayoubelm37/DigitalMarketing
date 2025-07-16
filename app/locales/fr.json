@@ -175,10 +175,10 @@
       "revenueLabel": "REVENUS GÉNÉRÉS POUR NOS CLIENTS",
       "revenueValue": "$50,231,398,548"
     },
-    "brandSection": {
-      "paragraph1": "Notre objectif est de démocratiser le marketing digital.",
-      "paragraph2": "Nous nous engageons à dépasser vos attentes. Nous offrons des services à très haute valeur ajoutée tout en garantissant une excellente rentabilité."
-    },
+   "brandSection": {
+  "paragraph1": "Notre objectif est de démocratiser le marketing digital.",
+  "paragraph2": "Nous nous engageons à dépasser vos attentes. Nous fournissons des services à très forte valeur ajoutée tout en garantissant une excellente rentabilité."
+},
     "servicesSection": {
       "heading": "SERVICES",
       "webDesign": "Conception Web",
