@@ -25,10 +25,10 @@ export default function Footer({ t }: { t: any }) {
           </div>
           <div>
             <p className="text-gray-300 text-sm mb-2">
-              {t?.footer?.contactSection?.heading1 || "Get in touch with our marketing expert"}
+              {t?.footer?.contactSection?.heading1 }
             </p>
             <p className="text-gray-300 text-sm mb-4">
-              {t?.footer?.contactSection?.heading2 || "Ready to boost your digital presence?"}
+              {t?.footer?.contactSection?.heading2 }
             </p>
             <p className="text-red-500 text-2xl font-bold" dir="ltr">+212 635-589948</p>
           </div>
@@ -37,15 +37,15 @@ export default function Footer({ t }: { t: any }) {
         {/* Statistics */}
         <div className="grid grid-cols-3 gap-8 text-center">
           <div>
-            <p className="text-4xl font-bold">+115</p>
+            <p className="text-4xl font-bold">+110</p>
             <p className="text-gray-400 text-sm">{t.footer.stats?.projects }</p>
           </div>
           <div>
-            <p className="text-4xl font-bold">+70</p>
+            <p className="text-4xl font-bold">+65</p>
             <p className="text-gray-400 text-sm">{t.footer.stats?.companies }</p>
           </div>
           <div>
-            <p className="text-4xl font-bold">+4</p>
+            <p className="text-4xl font-bold">+5</p>
             <p className="text-gray-400 text-sm">{t.footer.stats?.countries}</p>
           </div>
         </div>
