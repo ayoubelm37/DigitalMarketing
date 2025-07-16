@@ -171,9 +171,8 @@
     "appointmentSection": {
       "heading": "Request your appointment",
       "paragraph": "Different city? Different country? Different continent? We always stay close to you.",
-      "button": "Make an appointment",
-      "revenueLabel": "REVENUE GENERATED FOR OUR CLIENTS",
-      "revenueValue": "$50,231,398,548"
+      "button": "Make an appointment"
+    
     },
     "brandSection": {
       "paragraph1": "Our aim is to democratise digital marketing.",

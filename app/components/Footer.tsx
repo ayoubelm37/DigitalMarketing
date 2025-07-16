@@ -4,7 +4,9 @@ import Link from "next/link"
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa"
 import Image from "next/image"
 
-export default function Footer({ t }: { t: Record<string, any> }) {
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function Footer({ t }: { t: any }) {
   return (
     <footer className="bg-[#0a1525] text-white py-12">
       {/* New section from the screenshot */}
@@ -36,15 +38,15 @@ export default function Footer({ t }: { t: Record<string, any> }) {
         <div className="grid grid-cols-3 gap-8 text-center">
           <div>
             <p className="text-4xl font-bold">+115</p>
-            <p className="text-gray-400 text-sm">{t.footer.statistics?.projects }</p>
+            <p className="text-gray-400 text-sm">{t.footer.stats?.projects }</p>
           </div>
           <div>
             <p className="text-4xl font-bold">+70</p>
-            <p className="text-gray-400 text-sm">{t.footer.statistics?.companies }</p>
+            <p className="text-gray-400 text-sm">{t.footer.stats?.companies }</p>
           </div>
           <div>
             <p className="text-4xl font-bold">+4</p>
-            <p className="text-gray-400 text-sm">{t.footer.statistics?.countries}</p>
+            <p className="text-gray-400 text-sm">{t.footer.stats?.countries}</p>
           </div>
         </div>
 

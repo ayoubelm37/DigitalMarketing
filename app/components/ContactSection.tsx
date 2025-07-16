@@ -3,28 +3,11 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
 
 export default function ContactSection() {
-  const locales = [
-    { code: 'en', label: 'English', flag: '/images/en.png' },
-    { code: 'ar', label: 'Arabic', flag: '/images/ar.png' },
-    { code: 'fr', label: 'French', flag: '/images/fr.png' },
-  ];
+ 
 
-  const pathname = usePathname();
-  const router = useRouter();
-
-  const handleLocaleChange = (locale: string) => {
-    // Remove the current locale from the path and add the new one
-    const segments = pathname.split('/');
-    if (locales.some(l => l.code === segments[1])) {
-      segments[1] = locale;
-    } else {
-      segments.splice(1, 0, locale);
-    }
-    router.push(segments.join('/'));
-  };
+  
 
   return (
     <>
