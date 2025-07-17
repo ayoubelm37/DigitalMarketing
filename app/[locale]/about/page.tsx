@@ -5,8 +5,8 @@ export async function generateStaticParams() {
   return ["en", "ar", "fr"].map((locale) => ({ locale }))
 }
 
-export default async function AboutPage({ params }: { params: { locale: string } }) {
-  const { locale } = params
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
   const t = getTranslations(locale as Locale)
   const direction = getDirection(locale as Locale)
 
