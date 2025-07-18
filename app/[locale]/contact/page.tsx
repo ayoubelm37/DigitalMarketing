@@ -5,14 +5,15 @@ export async function generateStaticParams() {
   return ['en', 'ar', 'fr'].map((locale) => ({ locale }))
 }
 
-export default function ContactPage({ params }: { params: { locale: string } }) {
-  const t = getTranslations(params.locale as Locale)
-  const direction = getDirection(params.locale as Locale)
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = getTranslations(locale as Locale)
+  const direction = getDirection(locale as Locale)
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 to-purple-950" dir={direction}>
       {/* Navigation placeholder */}
       <div className="container mx-auto px-4 py-6">
-        <Link href={`/${params.locale}/`} className="text-white hover:text-teal-400">
+        <Link href={`/${locale}/`} className="text-white hover:text-teal-400">
           ← {t.navigation.home}
         </Link>
       </div>

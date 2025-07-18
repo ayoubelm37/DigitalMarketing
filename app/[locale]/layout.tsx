@@ -20,17 +20,18 @@ export async function generateStaticParams() {
   return ['en', 'ar', 'fr'].map((locale) => ({ locale }))
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params
 }: {
   children: React.ReactNode,
-  params: Record<string, string>
+  params: Promise<Record<string, string>>
 }) {
-  const direction = getDirection(params.locale as Locale)
-  const t = getTranslations(params.locale as Locale)
+  const resolvedParams = await params
+  const direction = getDirection(resolvedParams.locale as Locale)
+  const t = getTranslations(resolvedParams.locale as Locale)
   return (
-    <html lang={params.locale} dir={direction}>
+    <html lang={resolvedParams.locale} dir={direction}>
       <head>
         <title>{t.title || "Hela | Digital Marketing Agency"}</title>
         <meta name="description" content="Leading digital marketing agency helping businesses grow online" />

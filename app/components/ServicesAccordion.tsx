@@ -4,6 +4,7 @@ import { FaPaintBrush, FaCode, FaSearch, FaFacebook, FaHeart, FaPenNib, FaEnvelo
 import Image from 'next/image';
 import { getTranslations, type Locale } from '../lib/i18n'
 import { usePathname } from 'next/navigation'
+import CountUp from "./CountUp";
 
 export default function ServicesAccordion() {
   const pathname = usePathname()
@@ -106,19 +107,27 @@ export default function ServicesAccordion() {
           <div className="grid grid-cols-2 gap-8 text-center mb-8">
             <div>
               <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.traffic}</p>
-              <p className="text-[#0a1525] text-4xl font-extrabold">+77%</p>
+              <p className="text-[#0a1525] text-4xl font-extrabold">
+                <CountUp end={77} prefix="+" suffix="%" />
+              </p>
             </div>
             <div>
               <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.roi}</p>
-              <p className="text-[#0a1525] text-4xl font-extrabold">+241%</p>
+              <p className="text-[#0a1525] text-4xl font-extrabold">
+                <CountUp end={241} prefix="+" suffix="%" />
+              </p>
             </div>
             <div>
               <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.impressions}</p>
-              <p className="text-[#0a1525] text-4xl font-extrabold">+81%</p>
+              <p className="text-[#0a1525] text-4xl font-extrabold">
+                <CountUp end={81} prefix="+" suffix="%" />
+              </p>
             </div>
             <div>
               <p className="text-rose-500 text-sm font-bold">{t.servicesAccordion.stats.engagement}</p>
-              <p className="text-[#0a1525] text-4xl font-extrabold">+73%</p>
+              <p className="text-[#0a1525] text-4xl font-extrabold">
+                <CountUp end={73} prefix="+" suffix="%" />
+              </p>
             </div>
           </div>
 
