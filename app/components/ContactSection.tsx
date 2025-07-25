@@ -2,8 +2,13 @@
 
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 export default function ContactSection() {
+ 
+
+  
+
   return (
     <>
       <section className="w-full bg-[#0a1525] text-white ">
@@ -25,28 +30,59 @@ export default function ContactSection() {
                 We bring a personal touch to every project, ensuring that your brand doesn&apos;t
                 just participate but shines in the digital world.
               </p>
-              {/* Placeholder for review logos */}
+              {/* Email Link */}
+              <a href="mailto:info@youragency.com" className="text-rose-400 underline hover:text-rose-600 font-semibold mb-4" style={{ display: 'inline-block' }}>
+                ✉️ info@youragency.com
+              </a>
+              {/* Review logos */}
               <div className="flex items-center space-x-8">
-                {/* Add actual logos and ratings here */}
+                {/* Google Logo */}
                 <div className="flex flex-col items-center">
-                    {/* Google Logo */}
-                    <span className="font-bold text-lg">Google</span>
-                    <span className="text-sm text-gray-400">4.9 ★★★★★</span>
+                  <Image
+                    src="/google.jpg"
+                    width={40}
+                    height={40}
+                    alt="Google"
+                    className="w-10 h-10 object-contain rounded bg-white p-1 shadow"
+                  />
+                  <span className="font-bold text-lg">Google</span>
+                  <span className="text-sm text-gray-400">4.9 ★★★★★</span>
                 </div>
-                 <div className="flex flex-col items-center">
-                    {/* Provenexpert Logo */}
-                    <span className="font-bold text-lg">Provenexpert</span>
-                    <span className="text-sm text-gray-400">4.5 ★★★★★</span>
+                {/* Provenexpert Logo */}
+                <div className="flex flex-col items-center">
+                    <Image
+                   
+                    width={40}
+                    height={40}
+
+                    className="w-10 h-10 object-contain rounded bg-white p-1 shadow"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJsYXllciIgdmlld0JveD0iMCAwIDYzOSA2MzkuNzgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZDljNTk0O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+cHJvdmVuZXhwZXJ0LWljb248L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTY0NS41LDMyNS42MWMwLDE3Ni44OS0xNDMuMzksMzIwLjI4LTMxOS41LDMyMC4yOFM2LjUsNTAyLjUsNi41LDMyNS42MSwxNDkuODksNi4xMSwzMjYsNi4xMSw2NDUuNSwxNDkuNSw2NDUuNSwzMjUuNjFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNi41IC02LjExKSI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ1My44LDE2MS4xOCwyNzEuNDUsMzQzLjUzLDE5OC4yLDI3MC4yOCwxMjUsMzQzLjUzbDE0Ni41LDE0Ny4yOSwyNTUuNi0yNTUuNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02LjUgLTYuMTEpIj48L3BhdGg+PC9zdmc+" alt={''}/>
+                <span className="font-bold text-lg">Provenexpert</span>
+                  <span className="text-sm text-gray-400">4.5 ★★★★★</span>
                 </div>
-                 <div className="flex flex-col items-center">
-                    {/* Clutch Logo */}
-                    <span className="font-bold text-lg">Clutch</span>
-                    <span className="text-sm text-gray-400">4.6 ★★★★★</span>
+                {/* Clutch Logo */}
+                <div className="flex flex-col items-center">
+                  <Image
+                   
+                    src="https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/amzxshshja4hdd8qhuln"
+                    width={40}
+                    height={40}
+                    alt="Clutch"
+                  />
+                  <span className="font-bold text-lg">Clutch</span>
+                  <span className="text-sm text-gray-400">4.6 ★★★★★</span>
                 </div>
-                 <div className="flex flex-col items-center">
-                    {/* Shopify Partner Logo */}
-                    <span className="font-bold text-lg">Shopify partner</span>
-                    <span className="text-sm text-gray-400">4.8 ★★★★★</span>
+                {/* Shopify Partner Logo */}
+                <div className="flex flex-col items-center">
+                  <Image
+                    src="/shopify.webp"
+                    width={40}
+                    height={40}
+                    alt="Shopify Partners"
+                    className="w-10 h-10 object-contain rounded bg-white p-1 shadow"
+                  />
+                  <span className="font-bold text-lg">shopify partners</span>
+                  <span className="text-sm text-gray-400">4.8 ★★★★★</span>
                 </div>
               </div>
             </div>

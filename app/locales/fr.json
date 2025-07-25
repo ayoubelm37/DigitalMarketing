@@ -163,6 +163,7 @@
       "heading2": "Contactez-nous.",
       "phoneNumber": "+212 635-589948"
     },
+    
     "stats": {
       "projects": "PROJETS DIGITAUX",
       "companies": "ENTREPRISES",
@@ -175,10 +176,10 @@
       "revenueLabel": "REVENUS GÉNÉRÉS POUR NOS CLIENTS",
       "revenueValue": "$50,231,398,548"
     },
-    "brandSection": {
-      "paragraph1": "Notre objectif est de démocratiser le marketing digital.",
-      "paragraph2": "Nous nous engageons à dépasser vos attentes. Nous offrons des services à très haute valeur ajoutée tout en garantissant une excellente rentabilité."
-    },
+   "brandSection": {
+  "paragraph1": "Notre objectif est de démocratiser le marketing digital.",
+  "paragraph2": "Nous nous engageons à dépasser vos attentes. Nous fournissons des services à très forte valeur ajoutée tout en garantissant une excellente rentabilité."
+},
     "servicesSection": {
       "heading": "SERVICES",
       "webDesign": "Conception Web",
@@ -203,7 +204,7 @@
       "heading": "CONTACT",
       "email": "akratihoussam@gmail.com",
       "officeHeading": "NOTRE BUREAU AU MAROC",
-      "address": "5ème étage, N°27, Akram Offices, Av. Arabie Saoudite, Tanger 90000",
+      "address": "El Jadida",
       "phone": "+212 635-589948",
       "viewMap": "Voir la carte →",
       "languagesHeading": "NOUS PARLONS"

@@ -1,4 +1,5 @@
 {
+  
   "title": "Hela | Digital Marketing Agency",
   "navigation": {
     "home": "Home",
@@ -171,9 +172,8 @@
     "appointmentSection": {
       "heading": "Request your appointment",
       "paragraph": "Different city? Different country? Different continent? We always stay close to you.",
-      "button": "Make an appointment",
-      "revenueLabel": "REVENUE GENERATED FOR OUR CLIENTS",
-      "revenueValue": "$50,231,398,548"
+      "button": "Make an appointment"
+    
     },
     "brandSection": {
       "paragraph1": "Our aim is to democratise digital marketing.",
@@ -203,7 +203,7 @@
       "heading": "CONTACT",
       "email": "akratihoussam@gmail.com",
       "officeHeading": "OUR OFFICE IN MOROCCO",
-      "address": "5ème étage, N°27, Akram Offices, Av. Arabie Saoudite, Tangier 90000",
+      "address": "El Jadida",
       "phone": "+212 635-589948",
       "viewMap": "View map →",
       "languagesHeading": "WE SPEAK"
