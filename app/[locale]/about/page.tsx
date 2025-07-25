@@ -12,7 +12,6 @@ export async function generateStaticParams() {
 }
 
 export default async function AboutPage({ params }: PageProps) {
-  // Await the params since they're now a Promise in Next.js 15
   const { locale } = await params
   const t = getTranslations(locale as Locale)
   const direction = getDirection(locale as Locale)
@@ -40,7 +39,6 @@ export default async function AboutPage({ params }: PageProps) {
 // If you have generateMetadata, update it too
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params
-
   return {
     title: "About Us",
     description: "Learn more about our company and mission",
